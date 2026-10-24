@@ -1,0 +1,3 @@
+# The vault is only a container. The PlainSite key is added to it by
+# setup_credentials.py and is never stored in this repository.
+display_name: PlainSite

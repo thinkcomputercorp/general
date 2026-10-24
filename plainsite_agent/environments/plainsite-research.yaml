@@ -1,0 +1,29 @@
+# Sandbox for the PlainSite analyst. Networking is limited to the hosts the job
+# needs; the same list also bounds the agent's web_fetch and web_search tools.
+name: plainsite-research
+config:
+  type: cloud
+  networking:
+    type: limited
+    allow_package_managers: true
+    allowed_hosts:
+      # PlainSite API (the PLAINSITE_KEY credential is substituted only here)
+      - www.plainsite.org
+      - plainsite.org
+      # Case law
+      - static.case.law
+      - www.courtlistener.com
+      - law.justia.com
+      - www.supremecourt.gov
+      - "*.uscourts.gov"
+      - www.courts.ca.gov
+      - www.dccourts.gov
+      # Statutes, rules and legislative history
+      - www.law.cornell.edu
+      - www.govinfo.gov
+      - www.ecfr.gov
+      - uscode.house.gov
+      - code.dccouncil.gov
+      - www.nysenate.gov
+      - leginfo.legislature.ca.gov
+      - www.courts.state.ny.us
